@@ -53,3 +53,66 @@ body{
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
+.quiz-app .answers-area .answer input[type = "radio"]:checked + label{
+    color: #0075ff;
+}
+.quiz-app .answers-area .answer label{
+    cursor: pointer;
+    font-weight: bold;
+    color: #777;
+    font-size: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+}
+.quiz-app .submit{
+    background-color: #0075ff;
+    display: block;
+    width: 100%;
+    padding: 15px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px auto;
+    width: 100%;
+    transition: .3s;
+}
+.quiz-app .submit:focus{outline: none;}
+.quiz-app .submit:hover{background-color: #0050ff;}
+.quiz-app .bullets{
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+    border-radius: 6px;
+}
+.quiz-app .bullets .spans{
+    flex: 1;
+    display: flex;
+}
+.quiz-app .bullets .spans span{
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 5px;
+    transition: .3s;
+}
+.quiz-app .bullets .spans span.on{
+    background-color: #0075ff;
+}
+.quiz-app .results span{
+    font-weight: bold;
+}
+.quiz-app .results span.bad{
+    color: #dc0a0a;
+}
+.quiz-app .results span.good{
+    color: #009688;
+}
+.quiz-app .results span.perfect{
+    color: #0075ff;
+}
