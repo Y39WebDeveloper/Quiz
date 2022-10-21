@@ -46,9 +46,10 @@ function addQuestionData(obj, count){
         radio.type = "radio";
         radio.name = "questions";
         radio.id = `answer_${i}`;
+        radio.dataset.answer = obj[`answer_${i}`];
 
         let label = document.createElement('label');
-        label.setAttribute("for", `answer_${i}`);
+        label.htmlFor = `answer_${i}`;
         label.textContent = obj[`answer_${i}`];
 
         answer.appendChild(radio);
