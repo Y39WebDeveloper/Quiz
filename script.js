@@ -22,6 +22,7 @@ function createBullets(num){
     countSpan.innerHTML = num;
     for(let i = 0; i < num; i++){
         let bullet = document.createElement("span");
+        if(i == 0){bullet.className = "on";}
         bullets.appendChild(bullet);
     }
 }
